@@ -5,11 +5,39 @@
   font-family: 'Inter', serif;
 }
 
+.moving {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: -100;
+  transform: rotate(30deg);
+}
+
+@keyframes moving {
+  from {
+    transform: translateY(-400px)
+    translateX(-300px)
+  }
+  to {
+    transform: translateY(-700px)
+    translateX(-300px)
+  }
+}
+
+.moving-bg {
+  box-sizing: content-box;
+  padding: 500px;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url("banner.png");
+  background-size: 100%;
+  animation: moving 30s linear infinite;
+  animation-direction: alternate;
+}
+
 body {
   background-color: #000115;
-  background-image: url("banner.png");
-  background-repeat: repeat;
-  background-position: center;
 }
 
 .container {
