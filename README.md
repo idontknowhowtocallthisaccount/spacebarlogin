@@ -1,4 +1,4 @@
-# DEVELOPMENT BRANCH
+# Spacebar login
 
-If you see this branch, that means that I am currently editing the page, and you may see some changes on the github pages website.
-Right now, the github pages website MAY BE BROKEN, but it'll be back to normal when I'm done!
+I'm trying to make a cool login and registration page for the spacebar.chat client.
+It gets even better with users feedback on the official Discord server!
