@@ -131,3 +131,9 @@ input[type="password"] {
     outline: none;
     -webkit-tap-highlight-color: transparent;
 }
+
+@media screen and (max-width: 480px) {
+  .login-form {
+  width: 350px;
+}
+}
