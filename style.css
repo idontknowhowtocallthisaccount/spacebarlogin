@@ -65,7 +65,7 @@ body {
   border-width: 5px;
   border-radius: 20px;
   padding: 20px;
-  width: 300px;
+  width: 350px;
 }
 
 h1 {
@@ -130,4 +130,16 @@ input[type="password"] {
 .create-account-button:active {
     outline: none;
     -webkit-tap-highlight-color: transparent;
+}
+
+@media screen and (max-width: 480px) {
+  .login-form {
+  width: 300px;
+}
+}
+
+@media screen and (max-width: 320px) {
+  .login-form {
+  width: 250px;
+}
 }
