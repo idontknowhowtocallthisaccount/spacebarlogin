@@ -101,6 +101,7 @@ select {
 
 #month {
   width: 40%;
+  border-width: 2px;
 }
 
 #day {
@@ -148,11 +149,6 @@ input[type=number] {
   padding: 10px;
   text-align: center;
   text-decoration: none;
-}
-
-.create-account-button:active {
-    outline: none;
-    -webkit-tap-highlight-color: transparent;
 }
 
 @media screen and (max-width: 480px) {
