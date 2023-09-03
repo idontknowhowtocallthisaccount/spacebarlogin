@@ -59,11 +59,8 @@ body {
 }
 
 .login-form {
-  background-color: #000115;
+  background-color: #111111;
   color: #0185ff;
-  border-style: solid;
-  border-color: #1e1e1e;
-  border-width: 5px;
   border-radius: 20px;
   padding: 20px;
   width: 350px;
@@ -121,7 +118,7 @@ input::-webkit-inner-spin-button {
 }
 
 input[type=number] {
-  -moz-appearance: textfield;
+  appearance: textfield;
 }
 
 .signup-button {
