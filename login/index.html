@@ -39,7 +39,7 @@
 	var instance = document.querySelector('#instance').value;
     var email = document.querySelector('#email').value;
     var pwd = document.querySelector('#password').value;
-	var instanceUrl = '${instance}/api/auth/login'
+	var instanceUrl = instance + '/api/auth/login'
 
     var data = {
         login: email,
