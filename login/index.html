@@ -39,6 +39,7 @@
 	var instance = document.querySelector('#instance').value;
     var email = document.querySelector('#email').value;
     var pwd = document.querySelector('#password').value;
+	var instanceUrl = '${instance}/api/auth/login'
 
     var data = {
         login: email,
@@ -46,7 +47,7 @@
     };
 
     var xhr = new XMLHttpRequest();
-    xhr.open('POST', instance, true);
+    xhr.open('POST', instanceUrl, true);
     xhr.setRequestHeader('Content-Type', 'application/json;');
     xhr.send(JSON.stringify(data));
 
