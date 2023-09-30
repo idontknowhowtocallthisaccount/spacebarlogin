@@ -18,7 +18,7 @@
 		<div class="logo">
 			<img src="../assets/logo_blue.png" alt="Spacebar logo">
 		</div>
-		<form class="login-form" method="post">
+		<form class="login-form">
 			<h1>Log into Spacebar</h1>
 			<label for="instance">Instance</label>
 			<input type="url" id="instance" placeholder="Instance URL" required>
@@ -32,4 +32,33 @@
 		</form>
     </div>
 </body>
+<script>
+	document.querySelector('.login-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+	var instance = document.querySelector('#instance').value;
+    var email = document.querySelector('#email').value;
+    var pwd = document.querySelector('#password').value;
+
+    var data = {
+        login: email,
+        password: pwd
+    };
+
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', instance, true);
+    xhr.setRequestHeader('Content-Type', 'application/json;');
+    xhr.send(JSON.stringify(data));
+
+    xhr.onload = function() {
+        if (xhr.status === 200) {
+            // Handle successful login
+            console.log('Login successful');
+        } else {
+            // Handle failed login
+            console.log('Login failed');
+        }
+    };
+});
+</script>
 </html>
