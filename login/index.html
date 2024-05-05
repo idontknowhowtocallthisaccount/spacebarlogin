@@ -54,9 +54,11 @@
         if (xhr.status === 200) {
             // Handle successful login
             console.log('Login successful');
+            window.location.replace("status/successful");
         } else {
             // Handle failed login
             console.log('Login failed');
+            window.location.replace("status/failed");
         }
     };
 });
